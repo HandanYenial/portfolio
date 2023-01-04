@@ -1,21 +1,21 @@
 import React from 'react';
 import ProjectItem from '../components/ProjectItem';
-import events from "../assets/events.jpg";
-import legal from "../assets/legal.jpeg";
+import { ProjectList } from "../helpers/ProjectList";
 import "../styles/Projects.css"
 
 function Projects() {
   return (
     <div className="projects">
-      <h1> My Projects </h1>
+      <h1> My Personal Projects </h1>
         <div className="projectList">
-          <ProjectItem name = "Events" image={events}/>
-          <ProjectItem name = "Global&Legal" image={legal}/>
-
+          { ProjectList.map((project, idx) => {
+            return(
+              <ProjectItem id = {idx} name = {project.name} image={project.image} />
+            );
+          })}
         </div>
-
     </div>
-  )
+  );
 }
 
 export default Projects;

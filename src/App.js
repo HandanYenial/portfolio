@@ -5,6 +5,7 @@ import { Routes } from "react-router-dom";
 import { Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
+import ProjectDisplay from "./pages/ProjectDisplay.js";
 import Experience from "./pages/Experience";
 import Navbar from "./components/Navbar"; //import the navbar here bcz every page will have the Navbar component
 import Footer from "./components/Footer";
@@ -20,6 +21,7 @@ function App() { //the App component will help me to generate and define the rou
         {/* // we add a path for the url, and element to be sure the specific element will be rendered when this path is used */}
           <Route path= "/"           element = {<Home/>}/>
           <Route path= "/projects"   element = {<Projects/>} /> 
+          <Route path= "/project/:id" element= {<ProjectDisplay/>}/>
           <Route path= "/experience" element = {<Experience/>}/>
         </Routes>
         <Footer/>
