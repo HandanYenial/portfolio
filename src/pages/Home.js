@@ -2,7 +2,7 @@ import React from 'react';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
-import "../styles/Home.css"
+import "../styles/Home.css";
 
 
 function Home() {
@@ -12,9 +12,12 @@ function Home() {
             <h2> Hi, my name is Handan</h2>
             <div className="prompt">
                 <p>A software developer with a passion of learning new skills!</p>
-                <LinkedInIcon/>
+                <a href= "https://www.linkedin.com/in/handanyenial/"> 
+                    <LinkedInIcon />
+                </a>
+                <a href="https://github.com/HandanYenial">
                 <GitHubIcon/>
-                <AlternateEmailIcon/>
+                </a>
             </div>
         </div>
         <div className = "skills">
@@ -23,7 +26,7 @@ function Home() {
                 <li className="item">
                     <span>
                         JavaScript, Python, ReactJS, HTML, CSS, BootStrap, MaterialUI, NodeJS,
-                        Express.JS, PostgrSQL, Flask, Jinja2
+                        Express.JS, PostgrSQL, Flask, Jinja2, API, Heroku
                     </span>
                 </li>
             </ol>
