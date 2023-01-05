@@ -7,7 +7,7 @@ import "../styles/Footer.css"
 function Footer() {
   return (
     <div className = "footer">
-        <div className= "socialMedia">
+        <div className= "socialMedia"> 
             <LinkedInIcon/>
             <GitHubIcon/>
 
