@@ -1,10 +1,7 @@
 import React from 'react';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
-
 import Grid from '@mui/material/Grid';
-
-
 import "../styles/Home.css";
 
 
@@ -16,7 +13,7 @@ function Home() {
         <div className = "about">
             <h2> Hi, my name is Handan</h2>
             <div className="prompt">
-                <p>I'm a web developer with a passion of learning new skills!</p>
+                <p>I'm a web developer with a passion for learning new skills!</p>
                 <a href= "https://www.linkedin.com/in/handanyenial/"> 
                     <LinkedInIcon />
                 </a>
