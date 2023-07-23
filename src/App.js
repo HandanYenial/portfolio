@@ -7,18 +7,18 @@ import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import ProjectDisplay from "./pages/ProjectDisplay.js";
 import Experience from "./pages/Experience";
-import Navbar from "./components/Navbar"; //import the navbar here bcz every page will have the Navbar component
+import Navbar from "./components/Navbar";    //import the navbar here (every page will have the Navbar component)
 import Footer from "./components/Footer";
 
 
-function App() { //the App component will help me to generate and define the routes
+function App() {    //the App component will generate and define the routes
   return (
     <div className="App">
       <BrowserRouter>
         <Navbar/>
         
         <Routes>
-        {/* // we add a path for the url, and element to be sure the specific element will be rendered when this path is used */}
+        {/* //We add a path for the URL, and element to be sure the specific element will be rendered when this path is used */}
           <Route path= "/"           element = {<Home/>}/>
           <Route path= "/projects"   element = {<Projects/>} /> 
           <Route path= "/project/:id" element= {<ProjectDisplay/>}/>
